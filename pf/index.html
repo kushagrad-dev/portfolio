@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,25 +17,42 @@
 
 <body>
 
-    <!-- NAVIGATION -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header class="navbar">
-        <a href="#home" class="logo">Kushagra<span>.</span></a>
+
+        <a href="#home" class="logo">
+            Kushagra<span>.</span>
+        </a>
 
         <nav>
             <a href="#work">Work</a>
             <a href="#process">How I Work</a>
             <a href="#about">About</a>
+
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+                Resume
+            </a>
+
             <a href="#contact">Contact</a>
         </nav>
+
     </header>
 
 
     <main>
 
-        <!-- HERO -->
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section id="home" class="hero">
 
-            <p class="eyebrow">COMPUTER SCIENCE · ENGINEERING · AI</p>
+            <p class="eyebrow">
+                COMPUTER SCIENCE · ENGINEERING · AI
+            </p>
 
             <h1>
                 I use AI to make
@@ -49,26 +67,44 @@
             </p>
 
             <div class="hero-buttons">
+
                 <a href="#work" class="button primary">
                     View my work
+                </a>
+
+                <a
+                    href="resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button secondary"
+                >
+                    View Resume
                 </a>
 
                 <a href="#contact" class="button secondary">
                     Get in touch
                 </a>
+
             </div>
 
         </section>
 
 
-        <!-- WORK -->
+        <!-- =========================
+             WORK
+        ========================== -->
+
         <section id="work" class="section">
 
             <div class="section-heading">
 
-                <p class="eyebrow">SELECTED WORK</p>
+                <p class="eyebrow">
+                    SELECTED WORK
+                </p>
 
-                <h2>Projects & Case Studies</h2>
+                <h2>
+                    Projects & Case Studies
+                </h2>
 
                 <p>
                     Engineering work focused on problem solving,
@@ -80,6 +116,7 @@
 
 
             <!-- PROJECT 01 -->
+
             <article class="project-card">
 
                 <div class="project-number">
@@ -121,6 +158,7 @@
 
 
             <!-- PROJECT 02 -->
+
             <article class="project-card">
 
                 <div class="project-number">
@@ -155,149 +193,337 @@
 
         </section>
 
+    <!-- =========================
+        CASE STUDY
+    ========================== -->
 
-        <!-- CASE STUDY -->
-        <section id="case-study" class="section case-study">
+    <section id="case-study" class="section case-study">
 
-            <div class="section-heading">
+        <div class="section-heading">
 
-                <p class="eyebrow">
-                    CASE STUDY · 01
+            <p class="eyebrow">
+                CASE STUDY · 01
+            </p>
+
+            <h2>
+                From a vague feature idea
+                to a focused engineering scope.
+            </h2>
+
+            <p>
+                How I used AI to challenge assumptions, identify implementation
+                risks, and turn a broad feature request into a small,
+                implementable first version.
+            </p>
+
+        </div>
+
+
+        <div class="case-grid">
+
+
+            <!-- TARGET -->
+
+            <div class="case-label">
+                THE TARGET
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    Scope a meal-swap suggestions feature for a hostel
+                    nutrition and macro tracker.
                 </p>
 
-                <h2>
-                    From a vague feature idea
-                    to a focused engineering scope.
-                </h2>
+                <p>
+                    Users already log meals and track their personal
+                    protein target. The feature should suggest items from
+                    today's remaining menu that can help close the user's
+                    remaining protein gap.
+                </p>
 
             </div>
 
 
-            <div class="case-grid">
+            <!-- STARTING POINT -->
 
-                <div class="case-label">
-                    THE PROBLEM
-                </div>
+            <div class="case-label">
+                V0 · NAIVE PROMPT
+            </div>
 
-                <div class="case-text">
-                    <p>
-                        The goal was to scope a meal-swap suggestion feature
-                        for a hostel nutrition and macro tracker.
-                    </p>
+            <div class="case-text">
 
-                    <p>
-                        Users already logged meals against a personal
-                        protein target and could be short on protein by
-                        dinner. The feature needed to suggest useful items
-                        from the existing day's menu.
-                    </p>
-                </div>
+                <p>
+                    My starting point was a simple request for ideas for
+                    building the feature.
+                </p>
 
-
-                <div class="case-label">
-                    CONSTRAINTS
-                </div>
-
-                <div class="case-text">
-
-                    <ul>
-                        <li>Use the existing structured menu data.</li>
-                        <li>Focus primarily on closing the protein gap.</li>
-                        <li>No external nutrition API.</li>
-                        <li>No new recommendation or ML pipeline.</li>
-                        <li>No new database collections.</li>
-                        <li>Keep the first version small and implementable.</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="case-label">
-                    WHAT AI CHANGED
-                </div>
-
-                <div class="case-text">
-
-                    <p>
-                        My initial prompt produced broad suggestions,
-                        including ideas such as external food APIs and
-                        machine-learning approaches.
-                    </p>
-
-                    <p>
-                        Iterating with real project context changed the
-                        problem from "build a recommendation feature" into
-                        a much smaller ranking problem over a fixed set of
-                        existing menu items.
-                    </p>
-
-                </div>
-
-
-                <div class="case-label">
-                    FINAL DIRECTION
-                </div>
-
-                <div class="case-text">
-
-                    <p>
-                        The final scope was a simple suggestion endpoint:
-                    </p>
-
-                    <div class="code-box">
-                        GET /api/suggestions?userId=&amp;date=
-                    </div>
-
-                    <p>
-                        It returns the user's remaining protein gap and
-                        ranked suggestions from the remaining menu items.
-                    </p>
-
-                </div>
-
-
-                <div class="case-label">
-                    EDGE CASES
-                </div>
-
-                <div class="case-text">
-
-                    <ul>
-                        <li>Missing protein target.</li>
-                        <li>Protein target already met.</li>
-                        <li>Local date/time handling.</li>
-                        <li>Menu items missing protein data.</li>
-                    </ul>
-
-                </div>
-
-
-                <div class="case-label">
-                    KEY LESSON
-                </div>
-
-                <div class="case-text">
-
-                    <p>
-                        The biggest improvement did not come from making
-                        the prompt longer. It came from giving AI real
-                        context, forcing the reasoning into steps, and
-                        explicitly considering edge cases.
-                    </p>
-
-                    <p>
-                        AI helped explore and challenge the solution.
-                        I retained the final scope and engineering decision.
-                    </p>
-
-                </div>
+                <p>
+                    The response was broad and introduced possibilities such
+                    as external food APIs and machine-learning approaches
+                    that were not necessary for the first version.
+                </p>
 
             </div>
 
-        </section>
+
+            <!-- CONTEXT -->
+
+            <div class="case-label">
+                V2 · REAL CONTEXT
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    Adding the actual project context changed the quality of
+                    the discussion significantly.
+                </p>
+
+                <p>
+                    The existing stack was Next.js, Node/Express and MongoDB.
+                    The menu was already structured in the database, and the
+                    feature only needed to work with the existing day's menu.
+                </p>
+
+                <p>
+                    This reframed the problem as ranking a small fixed set
+                    of existing items rather than building a new
+                    recommendation system.
+                </p>
+
+            </div>
 
 
-        <!-- HOW I WORK -->
+            <!-- ITERATION -->
+
+            <div class="case-label">
+                PROMPT ITERATION
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    I iterated through multiple versions of the prompt instead
+                    of accepting the first answer.
+                </p>
+
+                <ul>
+
+                    <li>
+                        <strong>V1:</strong> assigned AI a collaborative role
+                        and made the constraints explicit.
+                    </li>
+
+                    <li>
+                        <strong>V2:</strong> added real project context and
+                        narrowed the problem.
+                    </li>
+
+                    <li>
+                        <strong>V3:</strong> used examples to improve the
+                        output format and reusability.
+                    </li>
+
+                    <li>
+                        <strong>V4:</strong> required a concrete output
+                        structure and edge cases.
+                    </li>
+
+                    <li>
+                        <strong>V5:</strong> decomposed the problem into
+                        implementation steps and surfaced data-flow risks.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- RISKS -->
+
+            <div class="case-label">
+                RISKS SURFACED
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    Step decomposition surfaced questions that needed to be
+                    answered before implementation.
+                </p>
+
+                <ul>
+
+                    <li>
+                        Does every menu item have a usable protein value?
+                    </li>
+
+                    <li>
+                        How is the user's remaining menu determined?
+                    </li>
+
+                    <li>
+                        Where is the daily protein target stored or calculated?
+                    </li>
+
+                    <li>
+                        How do we avoid calculating the same target twice?
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONSTRAINTS -->
+
+            <div class="case-label">
+                FINAL CONSTRAINTS
+            </div>
+
+            <div class="case-text">
+
+                <ul>
+
+                    <li>
+                        Use existing structured menu data.
+                    </li>
+
+                    <li>
+                        Focus on the protein gap.
+                    </li>
+
+                    <li>
+                        No external nutrition API.
+                    </li>
+
+                    <li>
+                        No new recommendation or ML pipeline.
+                    </li>
+
+                    <li>
+                        No new database collections.
+                    </li>
+
+                    <li>
+                        Keep the first version small and implementable.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- FINAL DECISION -->
+
+            <div class="case-label">
+                FINAL DECISION
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    The final scope was a simple suggestion endpoint:
+                </p>
+
+                <div class="code-box">
+                    GET /api/suggestions?userId=&amp;date=
+                </div>
+
+                <p>
+                    The endpoint returns the user's remaining protein gap
+                    and ranked suggestions from the remaining menu items.
+                </p>
+
+            </div>
+
+
+            <!-- EDGE CASES -->
+
+            <div class="case-label">
+                EDGE CASES
+            </div>
+
+            <div class="case-text">
+
+                <ul>
+
+                    <li>
+                        Missing protein target.
+                    </li>
+
+                    <li>
+                        Protein target already met.
+                    </li>
+
+                    <li>
+                        Local date/time handling.
+                    </li>
+
+                    <li>
+                        Menu items missing protein data.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- RESULT -->
+
+            <div class="case-label">
+                WHAT MOVED THE NEEDLE
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    The biggest improvement came from adding real context,
+                    followed by forcing the reasoning into steps and
+                    explicitly considering edge cases.
+                </p>
+
+                <p>
+                    Few-shot examples and role assignment helped, but they
+                    had less impact than understanding the actual engineering
+                    constraints.
+                </p>
+
+            </div>
+
+
+            <!-- HUMAN DECISION -->
+
+            <div class="case-label">
+                MY DECISION
+            </div>
+
+            <div class="case-text">
+
+                <p>
+                    AI helped me explore the problem, identify risks, and
+                    challenge the scope. I retained the final decision about
+                    what should actually be built.
+                </p>
+
+                <p>
+                    The goal was not to make the solution as sophisticated
+                    as possible. It was to make the first version useful,
+                    understandable, and implementable within the existing
+                    system.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+        <!-- =========================
+             HOW I WORK
+        ========================== -->
+
         <section id="process" class="section process-section">
 
             <div class="section-heading">
@@ -315,6 +541,7 @@
 
 
             <div class="process-grid">
+
 
                 <div class="process-item">
 
@@ -369,7 +596,10 @@
         </section>
 
 
-        <!-- ABOUT -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section id="about" class="section about-section">
 
             <div class="section-heading">
@@ -410,7 +640,10 @@
         </section>
 
 
-        <!-- CONTACT -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
         <section id="contact" class="section contact-section">
 
             <p class="eyebrow">
@@ -429,7 +662,7 @@
 
             <div class="contact-links">
 
-                <!-- CHANGE THESE THREE LINKS -->
+                <!-- EMAIL -->
 
                 <a href="mailto:kushagrad2007@gmail.com">
                     Email
@@ -458,7 +691,10 @@
     </main>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
@@ -475,4 +711,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
