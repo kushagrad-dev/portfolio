@@ -8,7 +8,7 @@
 
     <meta
         name="description"
-        content="Kushagra Dubey's engineering portfolio — projects, case studies and how I use AI to make better engineering decisions."
+        content="Kushagra Dubey — Computer Science student interested in backend engineering and AI-assisted engineering."
     >
 
     <link rel="stylesheet" href="style.css">
@@ -22,8 +22,8 @@
 
         <nav>
             <a href="#work">Work</a>
-            <a href="#about">About</a>
             <a href="#process">How I Work</a>
+            <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -34,7 +34,7 @@
         <!-- HERO -->
         <section id="home" class="hero">
 
-            <p class="eyebrow">ENGINEERING PORTFOLIO</p>
+            <p class="eyebrow">COMPUTER SCIENCE · ENGINEERING · AI</p>
 
             <h1>
                 I use AI to make
@@ -42,14 +42,20 @@
             </h1>
 
             <p class="hero-text">
-                I'm Kushagra Dubey, a Computer Science student building
-                practical software while using AI to challenge, improve,
-                and accelerate my engineering thinking.
+                I'm Kushagra Dubey, a Computer Science student interested
+                in backend engineering and building practical software.
+                I use AI to explore alternatives, challenge assumptions,
+                and improve my engineering decisions.
             </p>
 
             <div class="hero-buttons">
-                <a href="#work" class="button primary">View my work</a>
-                <a href="#contact" class="button secondary">Get in touch</a>
+                <a href="#work" class="button primary">
+                    View my work
+                </a>
+
+                <a href="#contact" class="button secondary">
+                    Get in touch
+                </a>
             </div>
 
         </section>
@@ -59,21 +65,26 @@
         <section id="work" class="section">
 
             <div class="section-heading">
+
                 <p class="eyebrow">SELECTED WORK</p>
 
                 <h2>Projects & Case Studies</h2>
 
                 <p>
-                    A look at how I approach engineering problems,
-                    make decisions, and work with AI.
+                    Engineering work focused on problem solving,
+                    trade-offs, and using AI as part of the development
+                    and decision-making process.
                 </p>
+
             </div>
 
 
-            <!-- PROJECT CARD -->
+            <!-- PROJECT 01 -->
             <article class="project-card">
 
-                <div class="project-number">01</div>
+                <div class="project-number">
+                    01
+                </div>
 
                 <div class="project-content">
 
@@ -81,14 +92,16 @@
                         FEATURE SCOPING · AI-ASSISTED ENGINEERING
                     </p>
 
-                    <h3>Meal-Swap Suggestions</h3>
+                    <h3>
+                        Meal-Swap Suggestions
+                    </h3>
 
                     <p>
                         Scoped a meal-swap suggestion feature for a hostel
-                        nutrition and macro tracker. The goal was to rank
+                        nutrition and macro tracker. The feature ranks
                         existing menu items based on a user's remaining
-                        protein requirement without introducing unnecessary
-                        complexity.
+                        protein requirement rather than introducing a new
+                        recommendation system.
                     </p>
 
                     <div class="tags">
@@ -98,7 +111,7 @@
                         <span>AI Collaboration</span>
                     </div>
 
-                    <a href="#" class="project-link">
+                    <a href="#case-study" class="project-link">
                         Read case study →
                     </a>
 
@@ -107,23 +120,34 @@
             </article>
 
 
-            <!-- SECOND PROJECT PLACEHOLDER -->
-            <article class="project-card placeholder">
+            <!-- PROJECT 02 -->
+            <article class="project-card">
 
-                <div class="project-number">02</div>
+                <div class="project-number">
+                    02
+                </div>
 
                 <div class="project-content">
 
                     <p class="project-type">
-                        CASE STUDY
+                        AI FLUENCY · WORKFLOW AUDIT
                     </p>
 
-                    <h3>More work coming soon</h3>
+                    <h3>
+                        AI-Assisted Engineering Workflow
+                    </h3>
 
                     <p>
-                        This space will showcase another project with
-                        evidence of the engineering decisions behind it.
+                        An audit of where AI should be used in my engineering
+                        workflow, where it should support decision-making,
+                        and where the engineering work should remain mine.
                     </p>
+
+                    <div class="tags">
+                        <span>AI Fluency</span>
+                        <span>Workflow Design</span>
+                        <span>Engineering Judgment</span>
+                    </div>
 
                 </div>
 
@@ -132,42 +156,212 @@
         </section>
 
 
+        <!-- CASE STUDY -->
+        <section id="case-study" class="section case-study">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">
+                    CASE STUDY · 01
+                </p>
+
+                <h2>
+                    From a vague feature idea
+                    to a focused engineering scope.
+                </h2>
+
+            </div>
+
+
+            <div class="case-grid">
+
+                <div class="case-label">
+                    THE PROBLEM
+                </div>
+
+                <div class="case-text">
+                    <p>
+                        The goal was to scope a meal-swap suggestion feature
+                        for a hostel nutrition and macro tracker.
+                    </p>
+
+                    <p>
+                        Users already logged meals against a personal
+                        protein target and could be short on protein by
+                        dinner. The feature needed to suggest useful items
+                        from the existing day's menu.
+                    </p>
+                </div>
+
+
+                <div class="case-label">
+                    CONSTRAINTS
+                </div>
+
+                <div class="case-text">
+
+                    <ul>
+                        <li>Use the existing structured menu data.</li>
+                        <li>Focus primarily on closing the protein gap.</li>
+                        <li>No external nutrition API.</li>
+                        <li>No new recommendation or ML pipeline.</li>
+                        <li>No new database collections.</li>
+                        <li>Keep the first version small and implementable.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="case-label">
+                    WHAT AI CHANGED
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        My initial prompt produced broad suggestions,
+                        including ideas such as external food APIs and
+                        machine-learning approaches.
+                    </p>
+
+                    <p>
+                        Iterating with real project context changed the
+                        problem from "build a recommendation feature" into
+                        a much smaller ranking problem over a fixed set of
+                        existing menu items.
+                    </p>
+
+                </div>
+
+
+                <div class="case-label">
+                    FINAL DIRECTION
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        The final scope was a simple suggestion endpoint:
+                    </p>
+
+                    <div class="code-box">
+                        GET /api/suggestions?userId=&amp;date=
+                    </div>
+
+                    <p>
+                        It returns the user's remaining protein gap and
+                        ranked suggestions from the remaining menu items.
+                    </p>
+
+                </div>
+
+
+                <div class="case-label">
+                    EDGE CASES
+                </div>
+
+                <div class="case-text">
+
+                    <ul>
+                        <li>Missing protein target.</li>
+                        <li>Protein target already met.</li>
+                        <li>Local date/time handling.</li>
+                        <li>Menu items missing protein data.</li>
+                    </ul>
+
+                </div>
+
+
+                <div class="case-label">
+                    KEY LESSON
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        The biggest improvement did not come from making
+                        the prompt longer. It came from giving AI real
+                        context, forcing the reasoning into steps, and
+                        explicitly considering edge cases.
+                    </p>
+
+                    <p>
+                        AI helped explore and challenge the solution.
+                        I retained the final scope and engineering decision.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
         <!-- HOW I WORK -->
         <section id="process" class="section process-section">
 
             <div class="section-heading">
-                <p class="eyebrow">HOW I WORK</p>
 
-                <h2>AI is a tool.<br>Engineering thinking stays mine.</h2>
+                <p class="eyebrow">
+                    HOW I WORK
+                </p>
+
+                <h2>
+                    AI is a tool.<br>
+                    Engineering thinking stays mine.
+                </h2>
+
             </div>
+
 
             <div class="process-grid">
 
                 <div class="process-item">
+
                     <span>01</span>
-                    <h3>Understand</h3>
+
+                    <h3>
+                        Understand
+                    </h3>
+
                     <p>
-                        I define the actual problem and constraints
-                        before asking AI for solutions.
+                        I define the actual problem, constraints,
+                        and desired outcome before asking AI for solutions.
                     </p>
+
                 </div>
 
+
                 <div class="process-item">
+
                     <span>02</span>
-                    <h3>Challenge</h3>
+
+                    <h3>
+                        Challenge
+                    </h3>
+
                     <p>
-                        I use AI to explore alternatives, surface
-                        risks, and challenge my initial assumptions.
+                        I use AI to explore alternatives, surface risks,
+                        and challenge my initial assumptions.
                     </p>
+
                 </div>
 
+
                 <div class="process-item">
+
                     <span>03</span>
-                    <h3>Decide</h3>
+
+                    <h3>
+                        Decide
+                    </h3>
+
                     <p>
-                        I make the final engineering decision based
-                        on the project's real constraints.
+                        I make the final engineering decision based on
+                        the project's actual constraints and what I can
+                        maintain.
                     </p>
+
                 </div>
 
             </div>
@@ -179,10 +373,18 @@
         <section id="about" class="section about-section">
 
             <div class="section-heading">
-                <p class="eyebrow">ABOUT</p>
 
-                <h2>A student building toward real engineering work.</h2>
+                <p class="eyebrow">
+                    ABOUT
+                </p>
+
+                <h2>
+                    A student building toward
+                    real engineering work.
+                </h2>
+
             </div>
+
 
             <div class="about-content">
 
@@ -192,15 +394,15 @@
                 </p>
 
                 <p>
-                    I'm particularly interested in understanding why a
-                    solution should be built a certain way—not just making
-                    something that works.
+                    I enjoy working through technical problems,
+                    understanding trade-offs, and turning ideas into
+                    practical software.
                 </p>
 
                 <p>
-                    My approach to AI is similar: I use it to explore,
-                    question, and improve my thinking while keeping the
-                    final decisions and responsibility with me.
+                    I use AI as part of my engineering workflow—not as a
+                    replacement for thinking, but as a way to explore
+                    options, identify risks, and improve decisions.
                 </p>
 
             </div>
@@ -211,27 +413,41 @@
         <!-- CONTACT -->
         <section id="contact" class="section contact-section">
 
-            <p class="eyebrow">LET'S CONNECT</p>
+            <p class="eyebrow">
+                LET'S CONNECT
+            </p>
 
-            <h2>Have an engineering opportunity?</h2>
+            <h2>
+                Have an engineering opportunity?
+            </h2>
 
             <p>
                 I'm open to connecting about backend and software
                 engineering opportunities.
             </p>
 
+
             <div class="contact-links">
 
-                <!-- Replace these with your real links -->
-                <a href="mailto:YOUR_EMAIL@example.com">
+                <!-- CHANGE THESE THREE LINKS -->
+
+                <a href="mailto:kushagrad2007@gmail.com">
                     Email
                 </a>
 
-                <a href="#" target="_blank">
+                <a
+                    href="https://github.com/kushagrad-dev"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     GitHub
                 </a>
 
-                <a href="#" target="_blank">
+                <a
+                    href="https://www.linkedin.com/in/kushagra-dubey-dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     LinkedIn
                 </a>
 

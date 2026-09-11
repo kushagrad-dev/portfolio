@@ -13,8 +13,14 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Helvetica, Arial, sans-serif;
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
 
     background: #0b0b0b;
     color: #f5f5f5;
@@ -43,9 +49,9 @@ section {
 }
 
 .eyebrow {
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     letter-spacing: 0.18em;
-    color: #888;
+    color: #777;
     margin-bottom: 20px;
 }
 
@@ -65,7 +71,8 @@ section {
 
     padding: 22px 40px;
 
-    background: rgba(11, 11, 11, 0.9);
+    background: rgba(11, 11, 11, 0.92);
+
     border-bottom: 1px solid #222;
 
 }
@@ -73,10 +80,11 @@ section {
 .logo {
     font-size: 1.3rem;
     font-weight: 700;
+    letter-spacing: -0.03em;
 }
 
 .logo span {
-    color: #aaa;
+    color: #777;
 }
 
 .navbar nav {
@@ -85,14 +93,14 @@ section {
 }
 
 .navbar nav a {
-    color: #aaa;
-    font-size: 0.9rem;
+    color: #999;
+    font-size: 0.88rem;
 
     transition: color 0.2s ease;
 }
 
 .navbar nav a:hover {
-    color: white;
+    color: #fff;
 }
 
 
@@ -114,14 +122,15 @@ section {
 }
 
 .hero h1 {
-    max-width: 900px;
+    max-width: 950px;
 
-    font-size: clamp(3rem, 7vw, 6.5rem);
+    font-size: clamp(3.2rem, 7vw, 6.7rem);
 
-    line-height: 0.98;
-    letter-spacing: -0.05em;
+    line-height: 0.96;
 
-    margin-bottom: 35px;
+    letter-spacing: -0.055em;
+
+    margin-bottom: 38px;
 }
 
 .hero h1 span {
@@ -132,14 +141,16 @@ section {
     max-width: 650px;
 
     color: #aaa;
-    font-size: 1.15rem;
+
+    font-size: 1.12rem;
 
     margin-bottom: 40px;
 }
 
 .hero-buttons {
     display: flex;
-    gap: 15px;
+    gap: 14px;
+
     flex-wrap: wrap;
 }
 
@@ -150,8 +161,9 @@ section {
 
     font-size: 0.9rem;
 
-    transition: transform 0.2s ease,
-                background 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
 }
 
 .button:hover {
@@ -159,13 +171,21 @@ section {
 }
 
 .primary {
-    background: white;
-    color: black;
+    background: #fff;
+    color: #000;
+}
+
+.primary:hover {
+    background: #ddd;
 }
 
 .secondary {
     border: 1px solid #444;
-    color: white;
+    color: #fff;
+}
+
+.secondary:hover {
+    background: #171717;
 }
 
 
@@ -178,18 +198,20 @@ section {
 }
 
 .section-heading h2 {
-    max-width: 800px;
+    max-width: 850px;
 
-    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-size: clamp(2.3rem, 5vw, 4.2rem);
 
     line-height: 1.05;
-    letter-spacing: -0.04em;
+
+    letter-spacing: -0.045em;
 
     margin-bottom: 20px;
 }
 
 .section-heading > p:last-child {
-    max-width: 600px;
+    max-width: 650px;
+
     color: #888;
 }
 
@@ -200,6 +222,7 @@ section {
 
 .project-card {
     display: grid;
+
     grid-template-columns: 100px 1fr;
 
     gap: 30px;
@@ -215,17 +238,19 @@ section {
 
 .project-number {
     color: #555;
+
     font-size: 0.9rem;
 }
 
 .project-content {
-    max-width: 750px;
+    max-width: 760px;
 }
 
 .project-type {
     color: #777;
 
     font-size: 0.7rem;
+
     letter-spacing: 0.15em;
 
     margin-bottom: 15px;
@@ -233,19 +258,25 @@ section {
 
 .project-content h3 {
     font-size: 2rem;
+
+    letter-spacing: -0.03em;
+
     margin-bottom: 15px;
 }
 
 .project-content > p:not(.project-type) {
     color: #999;
-    max-width: 700px;
+
+    max-width: 720px;
 
     margin-bottom: 25px;
 }
 
 .tags {
     display: flex;
+
     flex-wrap: wrap;
+
     gap: 8px;
 
     margin-bottom: 25px;
@@ -258,23 +289,103 @@ section {
 
     border-radius: 20px;
 
-    font-size: 0.75rem;
+    font-size: 0.72rem;
+
     color: #aaa;
 }
 
 .project-link {
     font-size: 0.9rem;
+
     text-decoration: underline;
+
     text-underline-offset: 5px;
+
+    transition: color 0.2s ease;
 }
 
-.placeholder {
-    opacity: 0.55;
+.project-link:hover {
+    color: #aaa;
 }
 
 
 /* =========================
-   PROCESS
+   CASE STUDY
+========================= */
+
+.case-study {
+    border-top: 1px solid #222;
+}
+
+.case-grid {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    column-gap: 60px;
+
+    row-gap: 0;
+}
+
+.case-label {
+    padding: 35px 0;
+
+    border-top: 1px solid #252525;
+
+    color: #666;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 0.15em;
+}
+
+.case-text {
+    padding: 35px 0;
+
+    border-top: 1px solid #252525;
+
+    color: #aaa;
+
+    max-width: 700px;
+}
+
+.case-text p {
+    margin-bottom: 18px;
+}
+
+.case-text p:last-child {
+    margin-bottom: 0;
+}
+
+.case-text ul {
+    padding-left: 20px;
+}
+
+.case-text li {
+    margin-bottom: 8px;
+}
+
+.code-box {
+    padding: 18px 20px;
+
+    margin: 25px 0;
+
+    background: #111;
+
+    border: 1px solid #292929;
+
+    border-radius: 6px;
+
+    font-family: "SFMono-Regular", Consolas, monospace;
+
+    font-size: 0.85rem;
+
+    color: #ddd;
+}
+
+
+/* =========================
+   HOW I WORK
 ========================= */
 
 .process-section {
@@ -283,6 +394,7 @@ section {
 
 .process-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 40px;
@@ -290,16 +402,19 @@ section {
 
 .process-item {
     border-top: 1px solid #333;
+
     padding-top: 20px;
 }
 
 .process-item span {
     color: #555;
+
     font-size: 0.8rem;
 }
 
 .process-item h3 {
     font-size: 1.4rem;
+
     margin: 20px 0 10px;
 }
 
@@ -316,6 +431,7 @@ section {
     border-top: 1px solid #222;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 80px;
@@ -327,7 +443,12 @@ section {
 
 .about-content p {
     color: #aaa;
+
     margin-bottom: 25px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
 }
 
 
@@ -346,7 +467,7 @@ section {
 
     line-height: 1;
 
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
 
     margin-bottom: 25px;
 }
@@ -361,14 +482,24 @@ section {
 
 .contact-links {
     display: flex;
+
     justify-content: center;
 
     gap: 30px;
+
+    flex-wrap: wrap;
 }
 
 .contact-links a {
     text-decoration: underline;
+
     text-underline-offset: 5px;
+
+    transition: color 0.2s ease;
+}
+
+.contact-links a:hover {
+    color: #888;
 }
 
 
@@ -378,6 +509,7 @@ section {
 
 footer {
     max-width: 1100px;
+
     margin: auto;
 
     padding: 30px;
@@ -385,11 +517,12 @@ footer {
     border-top: 1px solid #222;
 
     display: flex;
+
     justify-content: space-between;
 
     color: #555;
 
-    font-size: 0.8rem;
+    font-size: 0.78rem;
 }
 
 
@@ -408,11 +541,13 @@ footer {
     }
 
     .navbar nav a {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
     }
 
     .hero {
-        padding: 110px 20px 80px;
+        min-height: 85vh;
+
+        padding: 100px 20px 80px;
     }
 
     .section {
@@ -421,16 +556,35 @@ footer {
 
     .project-card {
         grid-template-columns: 1fr;
+
         gap: 10px;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .case-label {
+        padding-bottom: 10px;
+
+        border-top: none;
+    }
+
+    .case-text {
+        padding-top: 10px;
     }
 
     .process-grid {
         grid-template-columns: 1fr;
+
         gap: 40px;
     }
 
     .about-section {
         grid-template-columns: 1fr;
+
         gap: 20px;
     }
 
@@ -440,6 +594,7 @@ footer {
 
     footer {
         flex-direction: column;
+
         gap: 10px;
     }
 }
