@@ -598,3 +598,63 @@ footer {
         gap: 10px;
     }
 }
+
+/* =========================
+   VISUAL EVIDENCE
+========================= */
+
+.evidence-section {
+    max-width: 850px;
+}
+
+.evidence-card {
+    margin-top: 40px;
+
+    border: 1px solid #292929;
+
+    background: #101010;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+}
+
+.evidence-image {
+    background: #f5f5f5;
+
+    padding: 18px;
+}
+
+.evidence-image img {
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 3px;
+}
+
+.evidence-caption {
+    padding: 22px 24px;
+}
+
+.evidence-caption span {
+    display: block;
+
+    color: #777;
+
+    font-size: 0.68rem;
+
+    font-weight: 600;
+
+    letter-spacing: 0.15em;
+
+    margin-bottom: 10px;
+}
+
+.evidence-caption p {
+    color: #999;
+
+    margin: 0;
+}

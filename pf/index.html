@@ -32,7 +32,11 @@
             <a href="#process">How I Work</a>
             <a href="#about">About</a>
 
-            <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+                href="resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 Resume
             </a>
 
@@ -193,332 +197,423 @@
 
         </section>
 
-    <!-- =========================
-        CASE STUDY
-    ========================== -->
 
-    <section id="case-study" class="section case-study">
+        <!-- =========================
+             CASE STUDY
+        ========================== -->
 
-        <div class="section-heading">
+        <section id="case-study" class="section case-study">
 
-            <p class="eyebrow">
-                CASE STUDY · 01
-            </p>
+            <div class="section-heading">
 
-            <h2>
-                From a vague feature idea
-                to a focused engineering scope.
-            </h2>
-
-            <p>
-                How I used AI to challenge assumptions, identify implementation
-                risks, and turn a broad feature request into a small,
-                implementable first version.
-            </p>
-
-        </div>
-
-
-        <div class="case-grid">
-
-
-            <!-- TARGET -->
-
-            <div class="case-label">
-                THE TARGET
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    Scope a meal-swap suggestions feature for a hostel
-                    nutrition and macro tracker.
+                <p class="eyebrow">
+                    CASE STUDY · 01
                 </p>
 
+                <h2>
+                    From a vague feature idea
+                    to a focused engineering scope.
+                </h2>
+
                 <p>
-                    Users already log meals and track their personal
-                    protein target. The feature should suggest items from
-                    today's remaining menu that can help close the user's
-                    remaining protein gap.
+                    How I used AI to challenge assumptions, identify
+                    implementation risks, and turn a broad feature request
+                    into a small, implementable first version.
                 </p>
 
             </div>
 
 
-            <!-- STARTING POINT -->
-
-            <div class="case-label">
-                V0 · NAIVE PROMPT
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    My starting point was a simple request for ideas for
-                    building the feature.
-                </p>
-
-                <p>
-                    The response was broad and introduced possibilities such
-                    as external food APIs and machine-learning approaches
-                    that were not necessary for the first version.
-                </p>
-
-            </div>
+            <div class="case-grid">
 
 
-            <!-- CONTEXT -->
+                <!-- TARGET -->
 
-            <div class="case-label">
-                V2 · REAL CONTEXT
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    Adding the actual project context changed the quality of
-                    the discussion significantly.
-                </p>
-
-                <p>
-                    The existing stack was Next.js, Node/Express and MongoDB.
-                    The menu was already structured in the database, and the
-                    feature only needed to work with the existing day's menu.
-                </p>
-
-                <p>
-                    This reframed the problem as ranking a small fixed set
-                    of existing items rather than building a new
-                    recommendation system.
-                </p>
-
-            </div>
-
-
-            <!-- ITERATION -->
-
-            <div class="case-label">
-                PROMPT ITERATION
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    I iterated through multiple versions of the prompt instead
-                    of accepting the first answer.
-                </p>
-
-                <ul>
-
-                    <li>
-                        <strong>V1:</strong> assigned AI a collaborative role
-                        and made the constraints explicit.
-                    </li>
-
-                    <li>
-                        <strong>V2:</strong> added real project context and
-                        narrowed the problem.
-                    </li>
-
-                    <li>
-                        <strong>V3:</strong> used examples to improve the
-                        output format and reusability.
-                    </li>
-
-                    <li>
-                        <strong>V4:</strong> required a concrete output
-                        structure and edge cases.
-                    </li>
-
-                    <li>
-                        <strong>V5:</strong> decomposed the problem into
-                        implementation steps and surfaced data-flow risks.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- RISKS -->
-
-            <div class="case-label">
-                RISKS SURFACED
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    Step decomposition surfaced questions that needed to be
-                    answered before implementation.
-                </p>
-
-                <ul>
-
-                    <li>
-                        Does every menu item have a usable protein value?
-                    </li>
-
-                    <li>
-                        How is the user's remaining menu determined?
-                    </li>
-
-                    <li>
-                        Where is the daily protein target stored or calculated?
-                    </li>
-
-                    <li>
-                        How do we avoid calculating the same target twice?
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- CONSTRAINTS -->
-
-            <div class="case-label">
-                FINAL CONSTRAINTS
-            </div>
-
-            <div class="case-text">
-
-                <ul>
-
-                    <li>
-                        Use existing structured menu data.
-                    </li>
-
-                    <li>
-                        Focus on the protein gap.
-                    </li>
-
-                    <li>
-                        No external nutrition API.
-                    </li>
-
-                    <li>
-                        No new recommendation or ML pipeline.
-                    </li>
-
-                    <li>
-                        No new database collections.
-                    </li>
-
-                    <li>
-                        Keep the first version small and implementable.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- FINAL DECISION -->
-
-            <div class="case-label">
-                FINAL DECISION
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    The final scope was a simple suggestion endpoint:
-                </p>
-
-                <div class="code-box">
-                    GET /api/suggestions?userId=&amp;date=
+                <div class="case-label">
+                    THE TARGET
                 </div>
 
-                <p>
-                    The endpoint returns the user's remaining protein gap
-                    and ranked suggestions from the remaining menu items.
-                </p>
+                <div class="case-text">
+
+                    <p>
+                        Scope a meal-swap suggestions feature for a hostel
+                        nutrition and macro tracker.
+                    </p>
+
+                    <p>
+                        Users already log meals and track their personal
+                        protein target. The feature should suggest items
+                        from today's remaining menu that can help close
+                        the user's remaining protein gap.
+                    </p>
+
+                </div>
+
+
+                <!-- STARTING POINT -->
+
+                <div class="case-label">
+                    V0 · NAIVE PROMPT
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        My starting point was a simple request for ideas
+                        for building the feature.
+                    </p>
+
+                    <p>
+                        The response was broad and introduced possibilities
+                        such as external food APIs, recommendation algorithms,
+                        machine learning, dietary filters, and additional UI
+                        scope that were not necessary for the first version.
+                    </p>
+
+                </div>
+
+
+                <!-- CONTEXT -->
+
+                <div class="case-label">
+                    V2 · REAL CONTEXT
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        Adding the actual project context changed the quality
+                        of the discussion significantly.
+                    </p>
+
+                    <p>
+                        The existing stack was Next.js, Node/Express and
+                        MongoDB. The mess menu was already available as
+                        structured data in the database, and users already
+                        logged what they ate against a daily macro target.
+                    </p>
+
+                    <p>
+                        This reframed the problem as ranking a small fixed
+                        set of existing menu items rather than building a
+                        general recommendation engine.
+                    </p>
+
+                </div>
+
+
+                <!-- ITERATION -->
+
+                <div class="case-label">
+                    PROMPT ITERATION
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        I iterated through multiple versions of the prompt
+                        instead of accepting the first answer.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            <strong>V1:</strong> assigned AI a collaborative
+                            role and made scope-control expectations explicit.
+                        </li>
+
+                        <li>
+                            <strong>V2:</strong> added real project context
+                            and narrowed the problem.
+                        </li>
+
+                        <li>
+                            <strong>V3:</strong> used a few-shot example to
+                            improve output structure and reusability.
+                        </li>
+
+                        <li>
+                            <strong>V4:</strong> required a concrete output
+                            structure and explicit edge cases.
+                        </li>
+
+                        <li>
+                            <strong>V5:</strong> decomposed the problem into
+                            implementation steps and surfaced data-flow risks.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- RISKS -->
+
+                <div class="case-label">
+                    RISKS SURFACED
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        Step decomposition surfaced questions that needed
+                        to be answered before implementation.
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            Does every menu item have a usable protein value?
+                        </li>
+
+                        <li>
+                            How is the user's remaining menu determined?
+                        </li>
+
+                        <li>
+                            Where is the daily protein target stored or
+                            calculated?
+                        </li>
+
+                        <li>
+                            How do we avoid calculating the same target twice?
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONSTRAINTS -->
+
+                <div class="case-label">
+                    FINAL CONSTRAINTS
+                </div>
+
+                <div class="case-text">
+
+                    <ul>
+
+                        <li>
+                            Use existing structured menu data.
+                        </li>
+
+                        <li>
+                            Focus on the protein gap.
+                        </li>
+
+                        <li>
+                            No external nutrition API.
+                        </li>
+
+                        <li>
+                            No new recommendation or ML pipeline.
+                        </li>
+
+                        <li>
+                            No new database collections.
+                        </li>
+
+                        <li>
+                            Keep the first version small and implementable.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- FINAL DECISION -->
+
+                <div class="case-label">
+                    FINAL DECISION
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        The final scope was a simple suggestion endpoint:
+                    </p>
+
+                    <div class="code-box">
+                        GET /api/suggestions?userId=&amp;date=
+                    </div>
+
+                    <p>
+                        The endpoint reads the user's target, sums today's
+                        logged protein, identifies remaining menu items,
+                        and returns the remaining gap plus ranked suggestions.
+                    </p>
+
+                    <div class="code-box">
+                        { remainingGapG, suggestions: [...] }
+                    </div>
+
+                </div>
+
+
+                <!-- VISUAL EVIDENCE -->
+
+                <div class="case-label">
+                    VISUAL EVIDENCE
+                </div>
+
+                <div class="case-text evidence-section">
+
+                    <p>
+                        The final prompt experiment produced concrete
+                        implementation decisions and showed which prompt
+                        techniques had the greatest impact.
+                    </p>
+
+
+                    <!-- EVIDENCE 01 -->
+
+                    <div class="evidence-card">
+
+                        <div class="evidence-image">
+
+                            <img
+                                src="images/v5-specification.png"
+                                alt="Final V5 specification showing open questions, data model, API endpoint, edge cases and effort estimate"
+                            >
+
+                        </div>
+
+                        <div class="evidence-caption">
+
+                            <span>
+                                01 · FINAL V5 SPECIFICATION
+                            </span>
+
+                            <p>
+                                The final specification connects open
+                                questions to the data model, API design,
+                                derived edge cases, and implementation effort.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EVIDENCE 02 -->
+
+                    <div class="evidence-card">
+
+                        <div class="evidence-image">
+
+                            <img
+                                src="images/what-moved-the-needle.png"
+                                alt="What Actually Moved the Needle table showing the impact of prompt engineering techniques"
+                            >
+
+                        </div>
+
+                        <div class="evidence-caption">
+
+                            <span>
+                                02 · WHAT MOVED THE NEEDLE
+                            </span>
+
+                            <p>
+                                The experiment ranked real context and step
+                                decomposition as the most impactful techniques,
+                                followed by explicit output structure,
+                                few-shot examples, and role assignment.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EDGE CASES -->
+
+                <div class="case-label">
+                    EDGE CASES
+                </div>
+
+                <div class="case-text">
+
+                    <ul>
+
+                        <li>
+                            Missing daily protein target.
+                        </li>
+
+                        <li>
+                            Consumed protein is already greater than or equal
+                            to the target.
+                        </li>
+
+                        <li>
+                            Meal-slot filtering must account for applicable
+                            local time.
+                        </li>
+
+                        <li>
+                            Menu items missing protein data should be excluded
+                            rather than treated as zero.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div class="case-label">
+                    WHAT MOVED THE NEEDLE
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        The biggest improvement came from adding real context,
+                        followed by forcing the reasoning into steps and
+                        explicitly considering edge cases.
+                    </p>
+
+                    <p>
+                        Few-shot examples and role assignment helped, but
+                        they had less impact than understanding the actual
+                        engineering constraints.
+                    </p>
+
+                </div>
+
+
+                <!-- HUMAN DECISION -->
+
+                <div class="case-label">
+                    MY DECISION
+                </div>
+
+                <div class="case-text">
+
+                    <p>
+                        AI helped me explore the problem, identify risks,
+                        and challenge the scope. I retained the final
+                        decision about what should actually be built.
+                    </p>
+
+                    <p>
+                        The goal was not to make the solution as sophisticated
+                        as possible. It was to make the first version useful,
+                        understandable, and implementable within the
+                        existing system.
+                    </p>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <!-- EDGE CASES -->
-
-            <div class="case-label">
-                EDGE CASES
-            </div>
-
-            <div class="case-text">
-
-                <ul>
-
-                    <li>
-                        Missing protein target.
-                    </li>
-
-                    <li>
-                        Protein target already met.
-                    </li>
-
-                    <li>
-                        Local date/time handling.
-                    </li>
-
-                    <li>
-                        Menu items missing protein data.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- RESULT -->
-
-            <div class="case-label">
-                WHAT MOVED THE NEEDLE
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    The biggest improvement came from adding real context,
-                    followed by forcing the reasoning into steps and
-                    explicitly considering edge cases.
-                </p>
-
-                <p>
-                    Few-shot examples and role assignment helped, but they
-                    had less impact than understanding the actual engineering
-                    constraints.
-                </p>
-
-            </div>
-
-
-            <!-- HUMAN DECISION -->
-
-            <div class="case-label">
-                MY DECISION
-            </div>
-
-            <div class="case-text">
-
-                <p>
-                    AI helped me explore the problem, identify risks, and
-                    challenge the scope. I retained the final decision about
-                    what should actually be built.
-                </p>
-
-                <p>
-                    The goal was not to make the solution as sophisticated
-                    as possible. It was to make the first version useful,
-                    understandable, and implementable within the existing
-                    system.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
 
         <!-- =========================
              HOW I WORK
@@ -662,9 +757,7 @@
 
             <div class="contact-links">
 
-                <!-- EMAIL -->
-
-                <a href="mailto:kushagrad2007@gmail.com">
+                <a href="mailto:kushagrad2007@gmail.com?subject=Engineering%20Opportunity">
                     Email
                 </a>
 
@@ -702,7 +795,7 @@
         </p>
 
         <p>
-            Built with HTML, CSS & JavaScript.
+            Built with HTML, CSS &amp; JavaScript.
         </p>
 
     </footer>
